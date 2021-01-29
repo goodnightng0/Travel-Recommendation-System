@@ -1,0 +1,80 @@
+html,
+body {
+  margin: 0px;
+  padding: 0;
+  background: url('./world2.jpg') no-repeat;
+  background-blend-mode: overlay;
+  background-size: 100%;
+  font-family: 'Noto Sans KR', Arial;
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+  animation: back 12s 0s 1 normal forwards;
+  animation-iteration-count: infinite;
+}
+.body{
+    background-size: cover;
+}
+button, html, body{
+  font-family: 'yg-jalnan', sans-serif
+}
+@font-face {
+  font-family: 'yg-jalnan';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@keyframes back{
+    0% {
+        background: url('./world2.jpg') no-repeat;
+        background-color: rgba(255, 255, 255, 0.4);
+        background-size: 100%;
+    }
+    16% {
+        background: url('./world2.jpg') no-repeat;
+        background-color: rgba(255, 255, 255, 0.95);
+        background-size: 100%;
+    }
+    33% {
+        background: url('./world4.jpg') no-repeat;
+        background-color: rgba(255, 255, 255, 0.4);
+        background-size: 100%;
+    }
+    49% {
+        background: url('./world4.jpg') no-repeat;
+        background-color: rgba(255, 255, 255, 0.95);
+        background-size: 100%;
+    }
+    66% {
+        background: url('./world.jpg') no-repeat;
+        background-color: rgba(255, 255, 255, 0.4);
+        background-size: 100%;
+    }
+    82% {
+        background: url('./world.jpg') no-repeat;
+        background-color: rgba(255, 255, 255, 0.95);
+        background-size: 100%;
+    }
+    100% {
+        background: url('./world2.jpg') no-repeat;
+        background-color: rgba(255, 255, 255, 0.4);
+        background-size: 100%;
+    }
+}
+.cal{
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 23%;
+    margin-top: -50px;
+    margin-left: -50px;
+    font-size: 40px;
+    }
+img{
+    position: absolute;
+    top: 56%;
+    left: 44%;
+    margin-top: -50px;
+    margin-left: -50px;
+    font-size: 40px;
+}

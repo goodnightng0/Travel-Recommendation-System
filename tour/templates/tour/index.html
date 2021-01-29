@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Tour</title>
+    <link rel="stylesheet" type="text/css" href="/static/tour/first.css"/>
+    <link href="/static/tour/logo6.png" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body>
+    <div class="title">
+            <div>국내 여행지 추천 테스트</div>
+            <div>다음 여행은 어디로 갈까?</div>
+    </div>
+ <form action='/move_forward/' method="post">
+    <button id="button-start" name="forwardBtn" type="submit">나에게 딱 맞는 국내 여행지 알아보러 가기 &#9758;  </button>
+</form>
+    <div class="bottom">
+        <img class="logo-img" height=60px src="/static/tour/logo5.png">
+        <div class="names">김유리 문지유 임세종</div>
+    </div>
+    <script>
+    element = document.getElementById("button-start");
+    element.classList.add("button-anim");
+
+    element.addEventListener("click", function(e) {
+    e.preventDefault;
+    // -> removing the class
+    element.classList.remove("start");
+
+    // -> triggering reflow /* The actual magic */
+    // without this it wouldn't work. Try uncommenting the line and the transition won't be retriggered.
+    element.offsetWidth = element.offsetWidth;
+
+    element.classList.add("start");
+    }, false);
+</script>
+</body>
+</html>

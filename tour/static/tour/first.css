@@ -1,0 +1,159 @@
+html,
+body {
+  margin: 0px;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  min-height: 100%;
+  background: url('./world2.jpg') no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+button, html, body{
+  font-family: 'yg-jalnan', sans-serif
+}
+@font-face {
+  font-family: 'yg-jalnan';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.title{
+  margin-top: 120px;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 20px;
+  text-shadow: 0px 1px 8px rgb(0 0 0 / 60%);
+}
+.title div:first-child{
+  opacity: 0;
+  font-weight: 1000;
+  margin : 0;
+  font-size: 50px;
+  animation: mymove 1.5s ease 0.5s 1 normal forwards;
+}
+.title div:first-child + .title div:nth-child(2){
+  margin:10px;
+}
+.title div:nth-child(2){
+  opacity: 0;
+  font-weight: 700;
+  margin : 0;
+  margin-top:20px;
+  font-size: 25px;
+  animation: mymove 1.5s ease 0s 1 normal forwards;
+}
+@keyframes mymove{
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+}
+70% {
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+100% {
+    transform: translateY(0px);
+    opacity: 1;
+}
+}
+form{
+  margin-top:100px;
+  justify-content: center;
+}
+#button-start{
+  margin: 40 auto;
+  top:50%;
+  height:60px;
+  background-color: rgb(248,248,248,0.8);
+  border: 5px solid rgb(253,112,37);
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  overflow: hidden;
+  opacity: 0;
+  display: table;
+}
+.button-anim{
+  animation: button-anim 1.5s ease 1s 1 normal forwards;
+}
+@keyframes button-anim{
+  0% {
+    color:rgb(0 0 0 / 0%);
+    opacity: 0;
+    width: 0;
+    transform: translateY(30px);
+    margin: auto;
+    overflow: hidden;
+}
+50%{
+    color:rgb(0 0 0 / 0%);
+    opacity: 1;
+    width: 0;
+    transform: translateY(0);
+    margin: auto;
+    overflow: hidden;
+}
+60%{
+  color:rgb(0 0 0 / 0%);
+  width: 5%;
+  margin: auto;
+    overflow: hidden;
+}
+100%{
+    width: 50%;
+    opacity: 1;
+    margin: auto;
+    overflow: hidden;
+}
+}
+@keyframes start{
+  0% {
+      opacity: 1;
+      width: 50%;
+      transform: translateY(0);
+  }
+  50%{
+      opacity: 0;
+      width: 0;
+      transform: translateY(0);
+  }
+  100%{
+      width: 0;
+      opacity: 0;
+      transform: translateY(30px);
+  }}
+  .start{
+    animation: start 3s ease 0s 1 normal forwards;
+ }
+  #button-start:hover{
+    color: #f8f8f8;
+    background-color: rgb(253,112,37, 0.8);
+    border: 5px solid rgb(248,248,248);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    opacity: 0.5;
+    cursor: pointer;
+  }
+.bottom{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+.names{
+  align-self: center;
+  font-size: 15px;
+  font-weight: 800;
+  color: #FFFFFF;
+  opacity: 0;
+  text-shadow: 0px 1px 8px rgb(0 0 0 / 80%);
+  animation: mymove 1.5s ease 0s 1 normal forwards;
+}
+.logo-img{
+  align-self: center;
+  opacity: 0;
+  animation: mymove 1.7s ease 1.25s 1 normal forwards;
+}

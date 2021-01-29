@@ -1,0 +1,126 @@
+html,
+body {
+  margin: 0px;
+  padding: 0;
+  background: url('./world2.jpg') no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-family: 'Noto Sans KR', Arial;
+
+}
+button, html, body{
+  font-family: 'yg-jalnan', sans-serif
+}
+@font-face {
+  font-family: 'yg-jalnan';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.entire{
+  border-radius: 40px;
+  width: 100%;
+  padding-top: 100px;
+  /*margin: 100px auto 10;*/
+}
+.top-result {
+  overflow: hidden;
+  padding-top: 15px;
+  height: 180px;
+  font-size: 35px;
+  font-weight: 800;
+  text-align: center;
+}
+.descrip{
+  display: inline-flex;
+  font-size: 22px;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+.descrip img{
+  margin-left: 40px;
+}
+.act_rank{
+  align-self: center;
+  padding-right: 100px;
+}
+.box {
+  text-align: center;
+  height: 80%;
+  /*margin: 250 auto 0;*/
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+img{
+  border-radius: 10px;
+}
+.recc{
+  margin-bottom: 30px;
+   font-size: 23px;
+}
+.activities1,.activities2{
+  display: flex;
+  padding-bottom: 30px;
+}
+.act1, .act2, .act3{
+  margin: auto;
+}
+.box1{
+  background: linear-gradient(rgb(255,239,213,0) 0%,rgb(255,218,185,1) 50%,rgb(222,184,135) 100%);
+  display: flex;
+  flex-direction: column;
+}
+.box2{
+  background: linear-gradient(rgb(222,184,135) 0%,rgb(216,191,216) 30%,rgb(135,206,235, 0.8) 100%);
+  display: flex;
+  flex-direction: column;
+}
+.box3{
+  background: linear-gradient(rgb(135,206,235, 0.8) 0%, rgb(105,111,165) 30%, rgb(12, 38, 107,0.9) 100%);
+  display: flex;
+  flex-direction: column;
+}
+.first{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: 50 auto;
+  padding-top: 100px;
+  width:150px;
+}
+.first > img{
+  align-self: center;
+}
+.place{
+  display:table;width:100px;height: 50px;margin-bottom:10px;padding:10px;
+  border:3px solid #000;
+  border-radius: 20px;
+  font-size: 30px;
+  text-align: center;
+  margin: auto;
+}
+.vslz{
+  height:150px;
+}
+.recc{
+  margin-top: 100px;
+}
+.bottom{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 8px;
+  right: 16px;
+}
+.names{
+  align-self: center;
+  font-size: 15px;
+  font-weight: 800;
+  color: #FFFFFF;
+  text-shadow: 0px 1px 8px rgb(0 0 0 / 80%);
+}
+.logo-img{
+  align-self: center;
+}

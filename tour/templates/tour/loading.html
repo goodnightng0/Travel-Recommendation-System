@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Tour</title>
+    <link rel="stylesheet" type="text/css" href="/static/tour/loading.css" />
+    <link
+      href="/static/tour/logo6.png"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+  <div class="loading">
+    <div class="cal">결과 분석중..<br/>더 좋은 여행을 위해 열심히 크롤링중입미당,,</div>
+    <img class="logo-img" height="180px" src="/static/tour/loadcat.gif" /></div>
+  <form id="myform" action="/result/" method="post"> </form>
+  <script>
+  console.log('before');
+  document.forms[0].submit('yes');
+  console.log('after');
+  </script>
+  </body>
+</html>

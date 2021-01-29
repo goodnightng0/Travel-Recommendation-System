@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>Tour</title>
+        <link rel="stylesheet" type="text/css" href="/static/tour/questions.css"/>
+    <link href="/static/tour/logo6.png" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body>
+    <div id="q1">
+        <br />
+    <div id="question1">{{location}} 여행 경험이 있습니까? </div>
+    <form id="answers1" action='/q1/' method="post">
+        <input type="submit" name="submit_button" value="네">
+        <input type="submit" name="submit_button" value="아니오">
+    </form>
+    </div>
+    <div class="bottom">
+        <img class="logo-img" height=60px src="/static/tour/logo5.png">
+        <div class="names">김유리 문지유 임세종</div>
+    </div>
+    {% if ans == 'yes' %}
+    <div id="q2">
+    <div id="question2">{{location}}에서의 만족도는 1~5점 중 몇 점입니까?</div>
+ <form id="answers2" action='/q2/' method="post">
+    <input type="submit" name="ratings_button" value="1">
+    <input type="submit" name="ratings_button" value="2">
+    <input type="submit" name="ratings_button" value="3">
+    <input type="submit" name="ratings_button" value="4">
+    <input type="submit" name="ratings_button" value="5">
+ </form>
+    </div>
+{% endif %}
+</body>
+<script>
+        element = document.getElementById("q1");
+        element.classList.add("q1-before");
+        var isQ2='{{ans}}';
+        if(isQ2 == 'yes'){
+                element.classList.remove("q1-before");
+
+                element.classList.add("q1-after");
+        }
+</script>
+</html>
